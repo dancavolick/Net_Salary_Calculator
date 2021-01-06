@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+.banner {
+    background-image: url("images/image1.jpg");
+    /*background-repeat: no-repeat;*/
+    height: 14vw;
+   
+}
+
+@media only screen and (min-width: 800px) {
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 16px teal;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 16px teal;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 16px teal;
+}
+
+#asterisk {
+    font-size: 1.0vw;
+ }
+
+main {
+    margin-bottom: 6vw;
+}
+
+.grossPay {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    margin-left: 25vw;
+    font-size: 2.5vw;
+    color:white;
+    text-shadow: 4px 4px 16px teal;
+}
+
+#grossPayid {
+    height: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+    color:black;
+    text-shadow: 4px 4px 16px teal;
+}
+
+#grossPayid:hover {
+  background-color: teal;
+}
+
+.payBasis {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+    margin-left: 30vw;
+    font-size: 2.5vw;
+    color:white;
+    text-shadow: 4px 4px 16px teal;
+}
+
+#paymentBasis {
+    height: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+    color:black;
+    text-shadow: 4px 4px 16px teal;
+}
+
+#paymentBasis:hover {
+  background-color: teal;
+}
+
+#button {
+    margin-left: 41vw;
+}
+
+#buttonTwo {
+    margin-left: 41vw;
+}
+
+button {
+    height: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+    color:black;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: teal;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(101, 206, 206)
+}
+
+#footer {
+    background-color: teal;
+    height: 5vw;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.disclaimer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.75vw;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 16px teal;
+    line-height: 5vw;
+}
+
+#netPayAnnual, #netPayMonthly, #netPayWeekly  {
+    display: none;
+}
+
+}

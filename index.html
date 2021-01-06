@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tax Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="banner">
+          <h1>Net Pay Calculator</h1>
+          <p>Not sure how much money you'll actually receive after tax and NI deductions?</p>
+          <br>
+          <p>Use this handy tool to confirm!<span id="asterisk">*</span></p>
+        </header>
+        <main>
+          <div class="grossPay">
+            <label for="grossPayid">Enter Gross GBP Annual Salary Here</label>
+            <input id="grossPayid" name="grossPayid" type="number">
+          </div>
+
+          <form class="payBasis">
+            <label for="paymentBasis">Select Calculation Basis</label>
+            <select id="paymentBasis" name="payBasis">
+              <option value="Annual">Annual</option>
+              <option value="Monthly">Monthly</option>
+              <option value="Weekly">Weekly</option>
+            </select>
+          </form>
+          <div id="button">
+            <button id="buttonAct">Click to Calculate!</button>
+          </div>
+          <div id="netPayAnnual">
+            <h2>Your annual net pay is: <span id="netPayAn"></span></h2>
+            <h2>Your annual tax is: <span id="taxAn"></span></h2>
+            <h2>Your annual NI is: <span id="niAn"></span></h2>
+          </div>
+          <br>
+          <div id="netPayMonthly">
+            <h2>Your monthly net pay is: <span id="netPayMo"></span></h2>
+            <h2>Your monthly tax is: <span id="taxMo"></span></h2>
+            <h2>Your monthly NI is: <span id="niMo"></span></h2>
+          </div>
+          <br>
+          <div id="netPayWeekly">
+            <h2>Your weekly net pay is: <span id="netPayWe"></span></h2>
+            <h2>Your weekly tax is: <span id="taxWe"></span></h2>
+            <h2>Your weekly NI is: <span id="niWe"></span></h2>
+          </div>
+        </main>
+        <div id="buttonTwo">
+          <button id="reset" onClick="window.location.reload();">Click Here to Reset</button>
+        </div>
+        <footer id="footer">
+          <p class="disclaimer">*Calculations account for UK tax and national insurance (class 1) only - data extracted from <a href="https://www.gov.uk/browse/tax" target="_blank">GOV.UK Money and Tax</a> and correct as at 5th January 2021</p>
+        </footer>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
